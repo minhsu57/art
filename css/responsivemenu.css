@@ -1,4 +1,4 @@
-#cssmenu,#cssmenu ul,#cssmenu ul li,#cssmenu ul li a,#cssmenu #head-mobile{font-family:"Roboto Condensed";list-style:none;display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#cssmenu,#cssmenu ul,#cssmenu ul li,#cssmenu ul li a,#cssmenu #head-mobile{list-style:none;display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #cssmenu:after,#cssmenu > ul:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
 #cssmenu #head-mobile{display:none}
 #cssmenu > ul > li{float:left}
@@ -28,6 +28,7 @@
     margin-right: 2%;
 }
 @media screen and (max-width:1000px){
+
 .search{position:absolute;top:0;left: 0;width:80%;height:46px;text-align:center;padding:4px 0 0 0;float:none;margin-top:0;}
 nav{width:100%;}
 #cssmenu{width:100%;background:#333}
