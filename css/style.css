@@ -22,6 +22,9 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
+a:hover{
+	text-decoration: none;
+}
 .img{
 	max-width: 100%;
 }
@@ -402,6 +405,19 @@ body a{
 	padding: 20px 0;
 	font-family: 'helvetica';
 }
+.title h3 {
+    background: url(../images/bg_title_h2.png) no-repeat center top;
+    text-align: center;
+    height: 70px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-style: normal;
+    font-family: "Roboto Condensed";
+}
 .readmore{
 	color: rgba(85, 85, 85, 0.92);
 	text-transform: uppercase;
@@ -419,6 +435,32 @@ body a{
 .new-products{
 	border-bottom: 1px solid #eee;
 	padding-bottom: 3em;
+}
+.home_product_content{
+	font-family: "Roboto Condensed";
+	margin-top: 30px;
+}
+.item {
+    padding: 10px;
+}
+.item img{
+	display: block;
+    width: 100%;
+    clear: both;
+}
+.item h3{
+	background: #E55725;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.item h3 a{
+	font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: normal;
 }
 .new h3,.top-sellers h3{
 	text-align:center;
