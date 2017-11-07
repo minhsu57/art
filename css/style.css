@@ -739,8 +739,7 @@ ul#flexiselDemo1 p{
 	margin-top: 10px;
 }
 .single-sub-image div {
-    max-width: 100px !important;
-    max-height: 100px;
+    max-width: 80px !important;
 	display: inline-block;
 }
 .single-sub-image img {
@@ -937,7 +936,7 @@ ul.tabs-menu li.active a{
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
 	margin: 0px 16px 0px 0px;
-	background:#026466;
+	background:#EF5F21;
 	border:none;
 	outline:none;
 }
@@ -1040,7 +1039,7 @@ span.amount {
 	font-size: 1.8em;
 	font-family: 'Aladin', cursive;
 	letter-spacing: 2px;
-	color: #026466;
+	color: #EF5F21;
 }
 ul.dropdown-menu1 li a:hover{
 	color:#000!important;	
@@ -1119,7 +1118,7 @@ ul.dropdown-menu1 li a:hover{
 }
 .item-list ul li {
 	padding:2px 0;
-	font-size:0.8em;
+	font-size:0.85em;
 	color:#555;
 }
 .item-list ul li a{
@@ -1140,9 +1139,9 @@ ul.dropdown-menu1 li a:hover{
 	padding:2px;
 	color:#999;
 }
-.prdt-cost ul li.active{
+.prdt-cost ul li.active, .prdt-cost .active{
 	font-size:1.3em;
-	color:red;
+	color:#EF5F21;
 }
 .prdt-cost ul a{
 	font-size: 0.8em;
@@ -1190,7 +1189,7 @@ ul.dropdown-menu1 li a:hover{
 p.prod-desc {
 	color: #3f3d3d;
 	padding-top: 2%;
-	font-size: 0.8em;
+	font-size: 0.85em;
 	line-height: 1.8em;
 }
 .sofaset-info{

@@ -21,7 +21,7 @@
 		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 	</script>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat|Raleway:400,200,300,500,600,700,800,900,100' rel='stylesheet'
-	 type='text/css'>
+	type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans">
@@ -34,12 +34,17 @@
 	<script type="text/javascript" src="js/responsivemenu.js"></script>
 
 
-	</script>
-	<script src="js/responsiveslides.min.js"></script>
+</script>
+<script src="js/responsiveslides.min.js"></script>
+<!-- magnific-popup -->
 
-	</script>
-	<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
-	<script>
+<link href="magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" media="all" />
+<script src="magnific-popup/magnific-popup.min.js"></script>
+
+
+</script>
+<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
 			// Slideshow 1
@@ -50,6 +55,17 @@
 				timeout: 7000,
 				namespace: "callbacks",
 			});
+		});
+		$(document).ready(function() {
+		  $('.gallery').each(function() { // the containers for all your galleries
+		  	$(this).magnificPopup({
+			        delegate: 'a', // the selector for gallery item
+			        type: 'image',
+			        gallery: {
+			        	enabled:true
+			        }
+			    });
+		  });
 		});
 	</script>
 </head>
@@ -95,281 +111,231 @@
 						<a href="cart.html">
 							<h3> <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)
 								<img src="images/bag.png" alt=""></h3>
-						</a>
-						<!-- <p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p> -->
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-
-	<!--cart-->
-
-	<!------>
-	<div class="menu_sec">
-		<div class="container">
-			<div class="">
-				<nav id='cssmenu'>
-					<div id="head-mobile"></div>
-					<div class="button"></div>
-					<!-- start header menu -->
-					<ul class="skyblue">
-						<li class="active grid"><a class="color1" href="index.html">Home</a></li>
-						<li class="grid"><a class="color2" href="#">Sản phẩm</a>
-							<ul>
-								<li><a href="products.html">All Sofas</a>
-									<ul>
-										<li><a href='#'>Sub Product</a></li>
-										<li><a href='#'>Sub Product</a></li>
-									</ul>
-								</li>
-								<li><a href="products.html">Fabric Sofas</a></li>
-								<li><a href="products.html">Leather Sofas</a></li>
-								<li><a href="products.html">L-shaped Sofas</a></li>
-								<li><a href="products.html">Love Seats</a></li>
-								<li><a href="products.html">Wooden Sofas</a></li>
-							</ul>
-						</li>
-						<li><a class="color4" href="#">dịch vụ</a>
-							<ul>
-								<li><a href="products.html">All Sofas</a></li>
-								<li><a href="products.html">Fabric Sofas</a></li>
-								<li><a href="products.html">Leather Sofas</a></li>
-								<li><a href="products.html">L-shaped Sofas</a></li>
-								<li><a href="products.html">Love Seats</a></li>
-								<li><a href="products.html">Wooden Sofas</a></li>
-							</ul>
-						</li>
-						<li><a class="color5" href="#">chuyên đề</a>
-							<ul>
-								<li><a href="products.html">All Sofas</a></li>
-								<li><a href="products.html">Fabric Sofas</a></li>
-								<li><a href="products.html">Leather Sofas</a></li>
-								<li><a href="products.html">L-shaped Sofas</a></li>
-								<li><a href="products.html">Love Seats</a></li>
-								<li><a href="products.html">Wooden Sofas</a></li>
-							</ul>
-						</li>
-						<li><a class="color5" href="#">liên hệ</a>
-					</ul>
-					<div class="search">
-						<form>
-							<input type="text" value="" placeholder="Search...">
-							<input type="submit" value="">
-						</form>
+							</a>
+							<!-- <p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p> -->
+							<div class="clearfix"> </div>
+						</div>
 					</div>
 					<div class="clearfix"></div>
-				</nav>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!---->
-	<div class="single-sec">
-		<div class="container">
-			<ol class="breadcrumb">
-				<li><a href="index.html">Home</a></li>
-				<li class="active">Products</li>
-			</ol>
-			<!-- start content -->
-			<div class="col-md-12 det">
-				<div class="single_left">
-					<div class="grid images_3_of_2">
-						<div>
-							<div class="single-main-image">
-								<img src="images/ss1.jpg" class="img-responsive" />
-							</div>
-							<div class="single-sub-image">
-								<div class=" thumbnail">
-									<img class="singe_thumb_image" src="images/tranh-quat-hoa-mai.png" />
-								</div>
-								<div class=" thumbnail">
-									<img class="singe_thumb_image" src="images/thu-cong-my-nghe-1.png" />
-								</div>
-								<div class=" thumbnail">
-									<img class="singe_thumb_image" src="images/sen-da.png" class="img-responsive" />
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<div class="single-right">
-					<h3>SPENCER 3+1+1 SOFA SET WITH 5 BIG CUSHIONS & WOODEN HANDLE</h3>
-					<div class="id">
-						<h4>ID: SB2379</h4>
-					</div>
-					<form action="" class="sky-form">
-						<fieldset>
-							<section>
-								<div class="rating">
-									<input type="radio" name="stars-rating" id="stars-rating-5">
-									<label for="stars-rating-5"><i class="icon-star"></i></label>
-									<input type="radio" name="stars-rating" id="stars-rating-4">
-									<label for="stars-rating-4"><i class="icon-star"></i></label>
-									<input type="radio" name="stars-rating" id="stars-rating-3">
-									<label for="stars-rating-3"><i class="icon-star"></i></label>
-									<input type="radio" name="stars-rating" id="stars-rating-2">
-									<label for="stars-rating-2"><i class="icon-star"></i></label>
-									<input type="radio" name="stars-rating" id="stars-rating-1">
-									<label for="stars-rating-1"><i class="icon-star"></i></label>
-									<div class="clearfix"></div>
-								</div>
-							</section>
-						</fieldset>
-					</form>
-					<div class="cost">
-						<div class="prdt-cost">
-							<ul>
-								<li>MRP:
-									<del>Rs 55000</del>
-								</li>
-								<li>Sellling Price:</li>
-								<li class="active">Rs 35000</li>
-								<a href="#">BUY NOW</a>
-							</ul>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="item-list">
-						<ul>
-							<li>Material: Solid Wood</li>
-							<li>Color: Brown</li>
-							<li>Style: Solid Wood</li>
-							<li>Brand: Corelle</li>
-							<li><a href="#">Click here for more details</a></li>
-						</ul>
-					</div>
-					<div class="single-bottom1">
-						<h6>Details</h6>
-						<p class="prod-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-							magna aliquam erat volutpat. Ut wisi enim ad minim veniam, ex ea commodo consequat. Duis autem vel eum iriure dolor
-							in hendrerit in vulputate velit esse molestie consequat.</p>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-				<div class="sofaset-info">
-					<h4>Product Summary SPENCER 3+1+1 SOFA SET WITH 5 BIG CUSHIONS & WOODEN HANDLE</h4>
-					<ul>
-						<li>Dimensions: 3 Seater: Length 208 x Width 81 x Height 91.5 cm and 1 Seater: Length 99 x Width 81 x Height 91.5 cm</li>
-						<li>Assembly Type: Pre Assembled</li>
-						<li>Material: Wooden Structure, Chemical Treated And Seasoned Wood, 19 mm and 12 mm Commercial Ply and Mdf Used On Visible
-							Parts</li>
-						<li>Looks amazing in a contemporary setting</li>
-						<li>Colour: Brown Jute, Sheron Brown</li>
-						<li>Type: Spencer 3 plus 1 plus 1 Sofa Set With 5 Big Cushions and 6 Small Cushions, Wooden Handle</li>
-						<li>Long lasting, durable and easy to use product</li>
-						<li>Contents: 3 Pc</li>
-						<li>Delivery Time: 7 to 10 days from the Day of Dispatch</li>
-						<li>Very classy and contemporary design</li>
-						<li>SUPC: SHG21458689652</li>
-						<li>Material: High Density Foam and Fabric</li>
-					</ul>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<!---->
-	<div class="footer-content">
-		<div class="container">
-			<div class="ftr-grids">
-				<div class="col-md-3 ftr-grid">
-					<h4>About Us</h4>
-					<ul>
-						<li><a href="#">Who We Are</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="#">Our Sites</a></li>
-						<li><a href="#">In The News</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Carrers</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 ftr-grid">
-					<h4>Customer service</h4>
-					<ul>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Shipping</a></li>
-						<li><a href="#">Cancellation</a></li>
-						<li><a href="#">Returns</a></li>
-						<li><a href="#">Bulk Orders</a></li>
-						<li><a href="#">Buying Guides</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 ftr-grid">
-					<h4>Your account</h4>
-					<ul>
-						<li><a href="account.html">Your Account</a></li>
-						<li><a href="#">Personal Information</a></li>
-						<li><a href="#">Addresses</a></li>
-						<li><a href="#">Discount</a></li>
-						<li><a href="#">Track your order</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 ftr-grid">
-					<h4>Categories</h4>
-					<ul>
-						<li><a href="#">> Furinture</a></li>
-						<li><a href="#">> Bean Bags</a></li>
-						<li><a href="#">> Decor</a></li>
-						<li><a href="#">> Kichen & Dinning</a></li>
-						<li><a href="#">> Bed & Bath</a></li>
-						<li><a href="#">...More</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!---->
-	<div class="footer">
-		<div class="container">
-			<div class="store">
-				<ul>
-					<li class="active">OUR STORE LOCATOR::</li>
-					<li><a href="#">Noida</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Belgium</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">China</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Thane</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Chennai</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Armenia</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Kolkata</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Malaysia</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Indonesia</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Mumbai</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Kerala</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Spain</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Northern Ireland</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Mohali</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Gurgaon</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Panchkula</a></li>
-					<li><a href="#">|</a></li>
-					<li><a href="#">Ambala</a></li>
-				</ul>
-			</div>
-			<div class="copywrite">
-				<p>Copyright © 2015 Furnyish All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-			</div>
-		</div>
-	</div>
-	</div>
-	<!---->
-</body>
 
-</html>
+		<div class="menu_sec">
+			<div class="container">
+				<div class="">
+					<nav id='cssmenu'>
+						<div id="head-mobile"></div>
+						<div class="button"></div>
+						<!-- start header menu -->
+						<ul class="skyblue">
+							<li class="active grid"><a class="color1" href="index.html">Home</a></li>
+							<li class="grid"><a class="color2" href="#">Sản phẩm</a>
+								<ul>
+									<li><a href="products.html">All Sofas</a>
+										<ul>
+											<li><a href='#'>Sub Product</a></li>
+											<li><a href='#'>Sub Product</a></li>
+										</ul>
+									</li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>
+							</li>
+							<li><a class="color4" href="#">dịch vụ</a>
+								<ul>
+									<li><a href="products.html">All Sofas</a></li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>
+							</li>
+							<li><a class="color5" href="#">chuyên đề</a>
+								<ul>
+									<li><a href="products.html">All Sofas</a></li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>
+							</li>
+							<li><a class="color5" href="#">liên hệ</a>
+							</ul>
+							<div class="search">
+								<form>
+									<input type="text" value="" placeholder="Search...">
+									<input type="submit" value="">
+								</form>
+							</div>
+							<div class="clearfix"></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!---->
+			<div class="single-sec">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li>
+						<li class="active">Products</li>
+					</ol>
+					<!-- start content -->
+					<div class="col-md-12 det">
+						<div class="single_left">
+							<div class="grid images_3_of_2">
+								<div class="gallery">
+									<div class="single-main-image">
+										<a href="images/tranh-quat-1.jpg" title="main image"><img src="images/tranh-quat-1.jpg" class="img-responsive" /></a>
+									</div>
+									<div class="single-sub-image">
+										<div class="thumbnail">
+											<a href="images/tranh-quat-hoa-mai.png" title="Tranh quạt hoa mai"><img class="singe_thumb_image" src="images/tranh-quat-hoa-mai.png" /></a>
+										</div>
+										<div class="thumbnail">
+											<a href="images/thu-cong-my-nghe-1.png" title="Tranh thủ công mỹ nghệ"><img class="singe_thumb_image" src="images/thu-cong-my-nghe-1.png" /></a>
+										</div>
+										<div class="thumbnail">
+											<a href="images/sen-da.png" title="Tranh sen đá"><img class="singe_thumb_image" src="images/sen-da.png" class="img-responsive" /></a>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="single-right">
+							<h3>TRANH QUẠT MÙA LÚA CHÍN</h3>
+							<div class="id">
+								<h4>ID: SB2379</h4>
+							</div>
+							<form action="" class="sky-form">
+								<fieldset>
+									<section>
+										<div class="rating">
+											<input type="radio" name="stars-rating" id="stars-rating-5">
+											<label for="stars-rating-5"><i class="icon-star"></i></label>
+											<input type="radio" name="stars-rating" id="stars-rating-4">
+											<label for="stars-rating-4"><i class="icon-star"></i></label>
+											<input type="radio" name="stars-rating" id="stars-rating-3">
+											<label for="stars-rating-3"><i class="icon-star"></i></label>
+											<input type="radio" name="stars-rating" id="stars-rating-2">
+											<label for="stars-rating-2"><i class="icon-star"></i></label>
+											<input type="radio" name="stars-rating" id="stars-rating-1">
+											<label for="stars-rating-1"><i class="icon-star"></i></label>
+											<div class="clearfix"></div>
+										</div>
+									</section>
+								</fieldset>
+							</form>
+							<div class="cost">
+								<div class="prdt-cost">
+									<ul>
+										<li>MRP:
+											<del>Rs 55000</del>
+										</li>
+										<li>Giá: <span class="active product-price">Rs 35000</span></li>
+										
+										<a href="#">MUA NGAY</a>
+									</ul>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="item-list">
+								<ul>
+									<li>Chất liệu: Solid Wood</li>
+									<li>Màu sắc: vàng - xanh</li>
+									<li>Style: Gỗ tự nhiên, màu sơn</li>
+									<li>Thương hiệu: Đức Vinh Art</li>
+								</ul>
+							</div>
+							<div class="single-bottom1">
+								<h6>Chi tiết</h6>
+								<p class="prod-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+									magna aliquam erat volutpat. Ut wisi enim ad minim veniam, ex ea commodo consequat. Duis autem vel eum iriure dolor
+									in hendrerit in vulputate velit esse molestie consequat.</p>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="sofaset-info">
+								<h4>Product Summary SPENCER 3+1+1 SOFA SET WITH 5 BIG CUSHIONS & WOODEN HANDLE</h4>
+								<ul>
+									<li>Dimensions: 3 Seater: Length 208 x Width 81 x Height 91.5 cm and 1 Seater: Length 99 x Width 81 x Height 91.5 cm</li>
+									<li>Assembly Type: Pre Assembled</li>
+									<li>Material: Wooden Structure, Chemical Treated And Seasoned Wood, 19 mm and 12 mm Commercial Ply and Mdf Used On Visible
+										Parts</li>
+										<li>Looks amazing in a contemporary setting</li>
+										<li>Colour: Brown Jute, Sheron Brown</li>
+										<li>Type: Spencer 3 plus 1 plus 1 Sofa Set With 5 Big Cushions and 6 Small Cushions, Wooden Handle</li>
+										<li>Long lasting, durable and easy to use product</li>
+										<li>Contents: 3 Pc</li>
+										<li>Delivery Time: 7 to 10 days from the Day of Dispatch</li>
+										<li>Very classy and contemporary design</li>
+										<li>SUPC: SHG21458689652</li>
+										<li>Material: High Density Foam and Fabric</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<!---->
+					<div class="footer-content">
+						<div class="container">
+							<div class="ftr-grids">
+								<div class="col-md-3 ftr-grid">
+									<h4>About Us</h4>
+									<ul>
+										<li><a href="#">Who We Are</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+										<li><a href="#">Our Sites</a></li>
+										<li><a href="#">In The News</a></li>
+										<li><a href="#">Team</a></li>
+										<li><a href="#">Carrers</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 ftr-grid">
+									<h4>Customer service</h4>
+									<ul>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Shipping</a></li>
+										<li><a href="#">Cancellation</a></li>
+										<li><a href="#">Returns</a></li>
+										<li><a href="#">Bulk Orders</a></li>
+										<li><a href="#">Buying Guides</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 ftr-grid">
+									<h4>Your account</h4>
+									<ul>
+										<li><a href="account.html">Your Account</a></li>
+										<li><a href="#">Personal Information</a></li>
+										<li><a href="#">Addresses</a></li>
+										<li><a href="#">Discount</a></li>
+										<li><a href="#">Track your order</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 ftr-grid">
+									<h4>Categories</h4>
+									<ul>
+										<li><a href="#">> Furinture</a></li>
+										<li><a href="#">> Bean Bags</a></li>
+										<li><a href="#">> Decor</a></li>
+										<li><a href="#">> Kichen & Dinning</a></li>
+										<li><a href="#">> Bed & Bath</a></li>
+										<li><a href="#">...More</a></li>
+									</ul>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</body>
+
+			</html>
