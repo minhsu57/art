@@ -26,6 +26,7 @@ a:hover{
 	text-decoration: none;
 }
 .img{
+	background: rgba(255, 255, 255, 0.25);
 	max-width: 100%;
 }
 .row{
@@ -306,7 +307,7 @@ a:hover{
 /*----*/
 .slider{
 	position:relative;
-	margin:0 0 2em 0;
+	margin:0 0 0 0;
 }
 .rslides {
 	position: relative;
@@ -402,6 +403,7 @@ a:hover{
 	padding-bottom: 2em;
 }
 .introduce_section{
+	background: rgba(255,255,255,0.6) url(../images/bg_well_l.png) no-repeat left top;
 	padding: 20px 0;
 	font-family: 'helvetica';
 }
@@ -730,6 +732,21 @@ ul#flexiselDemo1 p{
 	font-size: 0.8em;
 }
 /*-- --*/
+.product-model,.single-sec{
+	background: rgba(255,255,255,0.6) url(../images/bg_well_l.png) no-repeat left top;
+}
+.single-sub-image{
+	margin-top: 10px;
+}
+.single-sub-image div {
+    max-width: 100px !important;
+    max-height: 100px;
+	display: inline-block;
+}
+.single-sub-image img {
+    width: 100%;
+	border: 1px solid #ddd;
+}
 .product-model-sec {
 	margin: 1em 0 0 0;
 	float: right;
@@ -789,7 +806,7 @@ ul.tabs-menu li.active a{
 	width: 100%;
 }
 .b-link-stripe .b-wrapper{
-	position:absolute;
+	/*position:absolute;*/
 	width:100%;
 	height:100%;
 	top:0;
@@ -860,7 +877,7 @@ ul.tabs-menu li.active a{
 	left:0;
 }
 .product-grid {
-	width: 30%;
+	width: 22%;
 	margin: 0 3% 4% 0;
 	float: left;	
 	position: relative;
@@ -868,7 +885,7 @@ ul.tabs-menu li.active a{
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
-	min-height: 200px;
+	min-height: 370px;
 	border:1px solid #fff;
 }
 .product-grid:hover {
@@ -890,6 +907,10 @@ ul.tabs-menu li.active a{
 }
 .products-row a:hover{
 	text-decoration:none;
+}
+.product-img{
+	max-height: 250px;
+    overflow-y: hidden;
 }
 .product-img img {
 	width: 100%;
@@ -959,7 +980,7 @@ span.item_price{
 	margin-top: 2em;
 }
 .product-info.simpleCart_shelfItem {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 /*----*/
 ul.place{
@@ -1856,8 +1877,9 @@ a.cpns:hover{
 		right: -32px;
 		top: 25.5px!important;
 	}
-	.rsidebar {
-		margin: 1em 1em 0% 0;
+	.product-grid {
+		width: 47%;
+		margin: 0 3% 4% 0;
 	}
 	.check {
 		width: 100%;
