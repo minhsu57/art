@@ -1055,7 +1055,7 @@ ul.dropdown-menu1 li a:hover{
 	width:55%;
 }
 .single-right h3{
-	color:#333;
+	color: #026466;
 	font-size:1.2em;
 	font-weight:500;
 	line-height:1.3em;
@@ -1146,7 +1146,7 @@ ul.dropdown-menu1 li a:hover{
 .prdt-cost ul a{
 	font-size: 0.8em;
 	display: inline-block;
-	background: #026466;
+	background: #EF5F21;
 	padding: 0.6em 2em;
 	color: #fff;
 	text-decoration: none;
