@@ -59,14 +59,11 @@ a:hover,a:active,a:focus{
 	padding: 2em 0;
 	background-image: url('../images/bg.jpg');
 }
-.mega_nav {
+.mega_nav, .content, .contact,.product-model,.single-sec {
 	background: rgba(255,255,255,0.6) url(../images/bg_well_l.png) no-repeat left top;
 }
 .megamenu>li>a {
 	padding: 5px 25px !important;
-}
-.content {
-	background: rgba(255,255,255,0.6) url(../images/bg_well_l.png) no-repeat left top;
 }
 .login a{
 	font-size:13px;
@@ -100,6 +97,9 @@ a:hover,a:active,a:focus{
 }
 .social {
 	display: inline-block;
+}
+.footer_link{
+	text-align: center;
 }
 .top_right ul li:last-child{
 	margin-right: 0;
@@ -757,9 +757,6 @@ ul#flexiselDemo1 p{
 	font-size: 0.8em;
 }
 /*-- --*/
-.product-model,.single-sec{
-	background: rgba(255,255,255,0.6) url(../images/bg_well_l.png) no-repeat left top;
-}
 .single-sub-image{
 	margin-top: 10px;
 }
