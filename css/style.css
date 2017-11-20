@@ -35,6 +35,9 @@ a:hover,a:active,a:focus{
 }
 .breadcrumb{
 	margin:2em 0;
+}
+.breadcrumb > .active {
+    color: #585555;
 }	
 /*-- header_top --*/
 .top_bg{
@@ -59,7 +62,7 @@ a:hover,a:active,a:focus{
 	padding: 2em 0;
 	background-image: url('../images/bg.jpg');
 }
-.mega_nav, .content, .contact,.product-model,.single-sec {
+.mega_nav, .content,.product-model,.single-sec {
 	background: rgba(255,255,255,0.6) url(../images/bg_well_l.png) no-repeat left top;
 }
 .megamenu>li>a {
@@ -1252,12 +1255,12 @@ p.prod-desc {
 	margin-bottom: 1em;
 	font-family: 'Aladin', cursive;
 	letter-spacing: 2px;
-	color: #026466;
+	color: #EF5F21;
 }
 .contact form input[type="text"],.contact-right textarea {
 	width: 100%;
 	padding: 10px 12px;
-	border: 1px solid #87655B;
+	border: 1px solid rgba(236, 131, 100, 0.35);
 	font-size: 1em;
 	margin-bottom: 1.5em;
 	color: #87655B;
@@ -1273,13 +1276,10 @@ p.prod-desc {
 	resize:none;
 	height: 181px;
 }
-.contact form input[type="text"]:hover,.contact-right textarea:hover{
-	border:1px solid #026466;
-}
 .contact form input[type="submit"] {
-	font-size:0.8em;
+	font-size:1em;
 	display:inline-block;
-	background:#026466;
+	background:#E55725;
 	padding:0.8em 2em;
 	border:none;
 	color:#fff;
@@ -1302,7 +1302,7 @@ p.prod-desc {
 	margin-bottom: 1em;
 	font-family: 'Aladin', cursive;
 	letter-spacing: 2px;
-	color: #026466;
+	color: #EF5F21;
 	text-align:center;
 }
 .locations{
@@ -1326,23 +1326,32 @@ p.prod-desc {
 	margin:0 0.5em 5.5em 0;
 }
 .address-info  p{
-	color: #999;
-	font-size: 0.9em;
+	font-family: "Roboto Condensed";
+	color: #1b242f;
+	font-size: 16px;
 	text-decoration: none;
 	padding-bottom:3px;
 	display: block;
-	font-weight: 400;
+	font-weight: 500;
 }
 .address-info p a{
-	color: #999;
+	color: rgba(8, 7, 7, 0.96);
 }
 .address-info p a:hover{
-	color: #026466;
+	color: #E55725;
 }
 .address-info h4 {
-	color: #026466;
-	margin-bottom:8px;
-	font-size:1em;
+    font-family: "Roboto Condensed";
+	color: #E55725;
+    margin-bottom: 8px;
+    font-size: 20px;
+    border-bottom: 1px solid #E55725;
+    font-weight: 600;
+}
+.descr_info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #E55725;
 }
 .address-info h5 a{
 	color: #626262;
