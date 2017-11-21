@@ -25,7 +25,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	<!-- animated -->
 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
@@ -36,6 +37,15 @@
 
 	</script>
 	<script src="js/responsiveslides.min.js"></script>
+
+	<!-- magnific-popup -->
+	<link href="magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="magnific-popup/magnific-popup.min.js"></script>
+
+	<!-- owlcarousel-slider -->
+	<link href="owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+
 
 	</script>
 	<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
@@ -51,14 +61,21 @@
 				namespace: "callbacks",
 			});
 		});
+		$(document).ready(function () {
+			$('.gallery').each(function () { // the containers for all your galleries
+				$(this).magnificPopup({
+					delegate: 'a', // the selector for gallery item
+					type: 'image',
+					gallery: {
+						enabled: true
+					}
+				});
+			});
+		});
 	</script>
-
-
-
 </head>
 
 <body>
-	<!-- header -->
 	<!-- header -->
 	<div class="header_master">
 		<div class="top_bg">
@@ -109,7 +126,7 @@
 			</div>
 		</div>
 	</div>
-	<!---->
+
 	<div class="menu_sec">
 		<div class="container">
 			<div class="">
@@ -163,213 +180,119 @@
 		</div>
 	</div>
 	<!---->
-	<div class="content">
-		<div class="">
-			<div class="slider">
-				<ul class="rslides" id="slider1">
-					<li><img src="images/tranh-quat-banner.png" alt=""></li>
-					<li><img src="images/slider2.jpg" alt=""></li>
-					<li><img src="images/Top_Banner-222.jpg" alt=""></li>
-					<li><img src="images/tranh-son-mai-banner.png" alt=""></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!---->
-	<!--header//-->
-	<div class="product-model">
+	<div class="services-details-area">
+		<!--breadcrumb-->
 		<div class="container">
-			<div class="title">
-				<h3>Sản phẩm của chúng tôi</h3>
-			</div>
-			<ol class="breadcrumb fadeInRight animated">
+			<ol class="breadcrumb">
 				<li><a href="index.html">Trang chủ</a></li>
-				<li class="active">Sản phẩm</li>
+				<li><a href="index.html">Dịch vụ</a></li>
+				<li class="active">Dịch vụ vẽ tranh chân dung</li>
 			</ol>
-			<div class="col-md-12 product-model-sec fadeInLeft animated">
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/tranh-quat-hoa-mai.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+		</div>
+		<!--end breadcrumb-->
+		<!-- start content -->
+		<div class="col-md-12 det">
+			<div class="container">
+				<div class="col-lg-9 col-md-8">
+					<div class="single-latest-text">
+						<h2 class="title">Dịch vụ vẽ tranh chân dung</h2>
+						<div class="single-item-comment-view">
+							<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"
+							 data-mobile-iframe="true">
+								<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a>
 							</div>
+							<span><i class="fa fa-clock-o"></i>Ngày 25 tháng 11 năm 2017</span>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust prt_name">
-							<h4>5 Seater sofa set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+						<div class="service-text">
+							<h2>Việc g&igrave;n giữ, l&agrave;m sống dậy d&ograve;ng tranh d&acirc;n gian Việt Nam như tranh Đ&ocirc;ng Hồ (Bắc Ninh),
+								H&agrave;ng Trống v&agrave; Kim Ho&agrave;ng (H&agrave; Nội), Nam Ho&agrave;nh (Nghệ An)... trong bối cảnh hiện nay
+								được v&iacute; như bơi trong mu&ocirc;n tr&ugrave;ng s&oacute;ng gi&oacute;.</h2>
 
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/tranh-son-dau-hoa.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
-						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Fabric Sofa set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+							<p>Đ&atilde; từ l&acirc;u, d&ograve;ng tranh d&acirc;n gian kh&ocirc;ng c&ograve;n chiếm vị tr&iacute; chủ đạo trong
+								đời sống hội họa, bởi sự ph&aacute;t triển vượt l&ecirc;n của c&aacute;c d&ograve;ng tranh hiện đại kh&aacute;c.
+								C&oacute; chăng, n&oacute; c&ograve;n sống trong t&acirc;m thức của những người y&ecirc;u tranh truyền thống hoặc
+								trong một v&agrave;i gia đ&igrave;nh t&acirc;m huyết ở c&aacute;c l&agrave;ng nghề l&agrave;m tranh. Vậy n&ecirc;n
+								thật đ&aacute;ng qu&yacute; khi giữa mu&ocirc;n v&agrave;n kh&oacute; khăn, vẫn c&oacute; những người đang nỗ lực
+								g&igrave;n giữ, vực d&ograve;ng tranh d&acirc;n gian, kh&ocirc;ng để n&oacute; biến mất trong đời văn h&oacute;a
+								tinh thần người Việt.&nbsp;<br />
+								<br /> Mai một d&ograve;ng tranh qu&yacute;<br />
+								<br /> Tranh d&acirc;n gian vốn gắn b&oacute; chặt chẽ với đời sống văn h&oacute;a tinh thần của người d&acirc;n,
+								phục vụ việc thờ c&uacute;ng hoặc trang tr&iacute; ng&agrave;y lễ Tết. Kh&ocirc;ng &iacute;t th&igrave; nhiều, c&aacute;c
+								gia đ&igrave;nh đều c&oacute; một v&agrave;i bức tranh treo thường xuy&ecirc;n trong nh&agrave; v&agrave; c&oacute;
+								thể thay những bức tranh mới khi năm hết Tết đến.&nbsp;<br /> &nbsp;
+							</p>
 
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/tranh-son-dau-phong-canh.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
-						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>King Dior Bed</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+							<table cellpadding="10" style="width:150px">
+								<tbody>
+									<tr>
+										<td>
+											<p><img src="https://media.baotintuc.vn/2016/10/30/07/06/tranh-dong-ho.jpg" /></p>
 
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/bach-ma-thu-cong.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
-						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Newlook Sofa Set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+											<p>Nghệ nh&acirc;n vẽ ho&agrave;n thiện bức tranh &quot;C&aacute; ch&eacute;p tr&ocirc;ng trăng&quot;. Ảnh: Th&aacute;i
+												H&ugrave;ng/TTXVN
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/thu-cong-my-nghe-1.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
-						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Maxico Sofa Set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+							<p>Ng&ocirc;n ngữ của tranh d&acirc;n gian l&agrave; những &yacute; niệm về vũ trụ quan, nh&acirc;n sinh quan v&agrave;
+								quan niệm về c&aacute;i đẹp, rất gần gũi với đời sống người d&acirc;n. Nhắc đến những tranh Đ&ocirc;ng Hồ (Bắc Ninh),
+								H&agrave;ng Trống v&agrave; Kim Ho&agrave;ng (H&agrave; Nội), Nam Ho&agrave;nh (Nghệ An), tranh l&agrave;ng S&igrave;nh
+								(Huế), tranh K&iacute;nh (Nam Bộ)&hellip; một thời, hầu như ai cũng biết tới. Nhưng đến nay, d&ograve;ng tranh d&acirc;n
+								gian n&agrave;y đang chịu những t&aacute;c động kh&ocirc;ng nhỏ của cuộc sống, khiến nguy cơ mai một rất cao.&nbsp;</p>
 
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/sen-da.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>CozyWilm Sofa Set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
+
 				</div>
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/khung-tranh-1.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+				<div class="col-lg-3 col-md-4">
+					<div class="sidebar-widget">
+						<div class="single-sidebar-widget">
+							<h4 class="title">Dịch vụ tương tự</h4>
+							<div class="recent-content">
+								<div class="recent-content-item">
+									<a href="#"><img src="images/sen-da.png" alt=""></a>
+									<div class="recent-text">
+										<h4><a href="#">Ngôn ngữ của tranh dân gian là những ý niệm về vũ trụ quan, nhân sinh quan...</a></h4>
+									</div>
+								</div>
+								<div class="recent-content-item">
+									<a href="#"><img src="images/tranh-son-mai-phong-khach1.png" alt=""></a>
+									<div class="recent-text">
+										<h4><a href="#">Nghệ nhân Nguyễn Hữu Quả, làng tranh Đông Hồ, xã Song Hồ, huyện Thuận Thành, </a></h4>
+									</div>
+								</div>
+								<div class="recent-content-item">
+									<a href="#"><img src="images/tranh-son-mai-phong-khach2.png" alt=""></a>
+									<div class="recent-text">
+										<h4><a href="#">Hơn nữa, nhiều thầy tào, thầy cúng tuổi đã cao nhưng chưa có con cháu có đủ tố chất để truyền...</a></h4>
+									</div>
+								</div>
+								<div class="recent-content-item">
+									<a href="#"><img src="images/Wedding-600W-x-600Hpx.jpg" alt=""></a>
+									<div class="recent-text">
+										<h4><a href="#">Writing Skill</a></h4>
+									</div>
+								</div>
 							</div>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Irony Seater</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
+						<div class="single-sidebar-widget">
+							<h4 class="title">Search by Tags</h4>
+							<ul class="tags">
+								<li><a href="#">Photoshop</a></li>
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Tutorial</a></li>
+								<li><a href="#">Courses</a></li>
+								<li><a href="#">Premium</a></li>
+								<li><a href="#">Designtuto</a></li>
+							</ul>
 						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/Decoration-600W-x-600Hpx.jpg" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
-						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Rory 5 Seater</h4>
-							<p>ID: S4BJ87</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="clearfix"></div>
 	</div>
 	<!---->
 	<div class="footer-content">
@@ -404,6 +327,17 @@
 			</div>
 		</div>
 	</div>
+	</div>
+	<div id="fb-root"></div>
+	<script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 </body>
 
 </html>

@@ -25,7 +25,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,600,700,800,900" rel="stylesheet">
 
 	<!-- animated -->
 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
@@ -33,12 +33,8 @@
 	<link href="css/responsivemenu.css" rel="stylesheet" type="text/css" media="all" />
 	<script type="text/javascript" src="js/responsivemenu.js"></script>
 
-
 	</script>
 	<script src="js/responsiveslides.min.js"></script>
-
-	</script>
-	<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
 	<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
@@ -51,14 +47,19 @@
 				namespace: "callbacks",
 			});
 		});
+		$(document).ready(function () {
+			$("#collapse_introduce").on("hide.bs.collapse", function () {
+				$("#collapse_button").html('...Xem chi tiết');
+			});
+			$("#collapse_introduce").on("show.bs.collapse", function () {
+				$("#collapse_button").html('Rút gọn...');
+			});
+		});
 	</script>
-
-
 
 </head>
 
 <body>
-	<!-- header -->
 	<!-- header -->
 	<div class="header_master">
 		<div class="top_bg">
@@ -92,7 +93,10 @@
 			<div class="container">
 				<div class="logo">
 					<a href="index.html" class="col-xs-12 col-md-4 pull-left"><img width="130px" src="images/logo.png" alt=""/></a>
-					<div class="slogan col-xs-8"><span>Đức Vinh Art Workshop</span></div>
+					<div class="slogan col-xs-8">
+						<span>Đức Vinh Art Workshop</span>
+						<span class="slogan_small">vì mái ấm gia đình bạn</span>
+					</div>
 				</div>
 				<div class="header_right">
 
@@ -109,7 +113,10 @@
 			</div>
 		</div>
 	</div>
-	<!---->
+
+	<!--cart-->
+
+	<!------>
 	<div class="menu_sec">
 		<div class="container">
 			<div class="">
@@ -162,211 +169,90 @@
 			</div>
 		</div>
 	</div>
-	<!---->
+	<!-- Slider area -->
 	<div class="content">
 		<div class="">
 			<div class="slider">
 				<ul class="rslides" id="slider1">
-					<li><img src="images/tranh-quat-banner.png" alt=""></li>
-					<li><img src="images/slider2.jpg" alt=""></li>
-					<li><img src="images/Top_Banner-222.jpg" alt=""></li>
-					<li><img src="images/tranh-son-mai-banner.png" alt=""></li>
+					<li><img src="images/Dong-ho-tranh-1346-x-355px-01.jpg" alt=""></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<!---->
-	<!--header//-->
-	<div class="product-model">
+	<!-- End slider area -->
+
+	<div class="main">
+		<div class="title">
+			<h3>Chuyên đề Nội thất</h3>
+		</div>
+		<!--breadcrumb-->
 		<div class="container">
-			<div class="title">
-				<h3>Sản phẩm của chúng tôi</h3>
-			</div>
-			<ol class="breadcrumb fadeInRight animated">
+			<ol class="breadcrumb">
 				<li><a href="index.html">Trang chủ</a></li>
-				<li class="active">Sản phẩm</li>
+				<li class="active">Chuyên đề nội thất</li>
 			</ol>
-			<div class="col-md-12 product-model-sec fadeInLeft animated">
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/tranh-quat-hoa-mai.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+		</div>
+		<!--end breadcrumb-->
+		<!-- Services area -->
+		<div class="services-area">
+			<div class="container">
+				<div class="">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="item">
+							<div class="news-container">
+								<a href="news-details.html"><img src="images/Wedding-600W-x-600Hpx.jpg" class="img-responsive" alt=""/></a>
 							</div>
+							<h3><a href="news-details.html">Nội thất</a></h3>
+							<h4><a href="news-details.html">Trang trí cổng cưới bằng hoa - sự mới mẻ phá cách tạo cảm hứng check-in cho bạn bè cô dâu chú rể</a></h4>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust prt_name">
-							<h4>5 Seater sofa set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
-				</div>
-
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/tranh-son-dau-hoa.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="item">
+							<div class="news-container">
+								<a href="news-details.html"><img src="images/Consulting-design-600W-x-600Hpx.jpg" class="img-responsive" alt=""/></a>
 							</div>
+							<h3><a href="news-details.html">Nội thất</a></h3>
+							<h4><a href="news-details.html">Xem cái đẹp và nghệ thuật nâng tầm giá trị sống,
+Luôn sáng tạo và hiện thực ý tưởng của quý khách</a></h4>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Fabric Sofa set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
-				</div>
-
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/tranh-son-dau-phong-canh.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="item">
+							<div class="news-container">
+								<a href="news-details.html"><img src="images/tranh-son-dau-hoa.png" class="img-responsive" alt=""/></a>
 							</div>
+							<h3><a href="news-details.html">Nội thất</a></h3>
+							<h4><a href="news-details.html">Tư vấn – Thiết kế – Thi công cảnh quan mang đến những dịch vụ đa dạng, phong phú nhằm thoả mãn nhu cầu của quý khách hàng.</a></h4>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>King Dior Bed</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
-				</div>
-
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/bach-ma-thu-cong.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="item">
+							<div class="news-container">
+								<a href="news-details.html"><img src="images/tranh-son-mai-phong-khach1.png" class="img-responsive" alt=""/></a>
 							</div>
+							<h3><a href="news-details.html">Nội thất</a></h3>
+							<h4><a href="news-details.html">Tranh là vật dụng trang trí không gian mang lại sự may mắn và thịnh vượng cho gia đình. Việc chọn và treo tranh thể hiện việc yêu nghệ thuật, nói lên khiếu thẩm mỹ, </a></h4>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Newlook Sofa Set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
-				</div>
-
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/thu-cong-my-nghe-1.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="item">
+							<div class="news-container">
+								<a href="news-details.html"><img src="images/tranh-son-mai-phong-khach2.png" class="img-responsive" alt=""/></a>
 							</div>
+							<h3><a href="news-details.html">Nội thất</a></h3>
+							<h4><a href="news-details.html">Treo một bức tranh đẹp, đúng với sở thích và phù hợp với phong cách gia chủ không chỉ giúp làm đẹp không gian sống, mà khiến họ thư giãn và giải toả căn thẳng.</a></h4>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Maxico Sofa Set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
-				</div>
-
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/sen-da.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="item">
+							<div class="news-container">
+								<a href="news-details.html"><img src="images/khung-tranh-1.png" class="img-responsive" alt=""/></a>
 							</div>
+							<h3><a href="news-details.html">Nội thất</a></h3>
+							<h4><a href="news-details.html">Việc chọn và treo tranh thể hiện việc yêu nghệ thuật, nói lên khiếu thẩm mỹ...</a></h4>
 						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>CozyWilm Sofa Set</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
 					</div>
-				</div>
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/khung-tranh-1.png" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
-						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Irony Seater</h4>
-							<p>ID: SR4598</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="product-grid love-grid">
-					<a href="single.html">
-						<div class="more-product"><span> </span></div>
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/Decoration-600W-x-600Hpx.jpg" class="img-responsive" alt="" />
-							<div class="b-wrapper">
-								<h4 class="b-animate b-from-left  b-delay03">
-									<button class="btns"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Quick View</button>
-								</h4>
-							</div>
-						</div>
-					</a>
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust">
-							<h4>Rory 5 Seater</h4>
-							<p>ID: S4BJ87</p>
-							<span class="item_price">$187.95</span>
-							<input type="button" class="item_add items" value="Mua hàng">
-						</div>
-						<div class="clearfix"> </div>
-					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
@@ -389,7 +275,9 @@
 						<li><a href="#"><span class="fa fa-google-plus circle"></span></a><a href="#"><span class="fa fa-facebook circle"></span></a>
 							<a href="#"><span class="fa fa-youtube circle"></span></a>
 						</li>
-						<li><a href="#">Đức Vinh Art Store - Bản quyền 2018 được bảo lưu.</a></li>
+						<li><a href="#">Mỹ thuật Đức Vinh</a></li>
+						<li><a href="#">Điện thoại - 0936 777 170</a></li>
+						<li><a href="#">Địa chỉ - xã Trị an, huyện Vĩnh Cửu,tỉnh Đồng Nai</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-md-4 ftr-grid footer_link">
@@ -404,6 +292,16 @@
 			</div>
 		</div>
 	</div>
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<span>Copyright © DucVinhArt.com 2017.All right reserved.Created by <a href="http://sudev.net" target="_blank">Le Minh Su</a></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!---->
 </body>
 
 </html>
